@@ -10,8 +10,6 @@ function route(pathname){
   console.log("About to route a request for" + pathname);
 };
 
-//exports.route = route ();
-
 function start(route){
   console.log ("Start Function");
   
@@ -32,4 +30,5 @@ function start(route){
 };
 
 console.log ("Start Server");
-exports.start = start();
+exports.route = route ();
+exports.start = start ();
