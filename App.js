@@ -7,7 +7,7 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 function route(pathname){
-  console.log("About to route a request for" + pathname);
+  console.log("About to route a request for: " + pathname);
 };
 
 function start(route){
@@ -15,7 +15,7 @@ function start(route){
   
   function onRequest(request, response){
     var pathname = url.parse (request.url) .pathname;      
-    console.log ("Request for" + pathname + "received.");
+    //console.log ("Request for " + pathname + " received.");
     
     route (pathname);
     
@@ -30,5 +30,5 @@ function start(route){
 };
 
 console.log ("Start Server");
-exports.route = route ();
+exports.route = route;
 exports.start = start ();
