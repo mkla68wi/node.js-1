@@ -3,8 +3,8 @@
 var http = require('http');
 var url = require("url");
 
-var server = require("./ server");
-var router = require("./ router");
+var server = require("./server");
+var router = require("./router");
 
 const hostname = '127.0.0.1';
 const port = 3000;
