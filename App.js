@@ -10,7 +10,7 @@ function route(pathname){
   console.log("About to route a request for" + pathname);
 };
 
-exports.route = route ();
+//exports.route = route ();
 
 function start(route){
   console.log ("Start Function");
@@ -19,7 +19,7 @@ function start(route){
     var pathname = url.parse (request.url) .pathname;      
     console.log ("Request for" + pathname + "received.");
     
-    route(pathname);
+    route (pathname);
     
     response.writeHead (200, {"Content-Type": "text / html"});
     
