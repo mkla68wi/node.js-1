@@ -21,4 +21,5 @@ function start(){
   console.log ("Server Started.");
 };
 
+console.log ("Start Server");
 exports.start = start;
