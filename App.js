@@ -23,4 +23,4 @@ function start(){
 };
 
 console.log ("Start Server");
-exports.start = start;
+exports.start = start();
