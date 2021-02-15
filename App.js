@@ -7,6 +7,7 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 function start(){
+  console.log ("Start Function");
   function onRequest(request, response){
     var pathname = url.parse (request.url) .pathname;      
     console.log ("Request for" + pathname + "received.");
