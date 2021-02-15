@@ -6,6 +6,12 @@ var url = require("url");
 const hostname = '127.0.0.1';
 const port = 3000;
 
+function route(pathname){
+  console.log("About to route a request for" + pathname);
+};
+
+exports.route = route ();
+
 function start(){
   console.log ("Start Function");
   function onRequest(request, response){
