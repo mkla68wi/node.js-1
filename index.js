@@ -3,6 +3,9 @@
 var http = require('http');
 var url = require("url");
 
+var server = require("./ server");
+var router = require("./ router");
+
 const hostname = '127.0.0.1';
 const port = 3000;
 
@@ -14,8 +17,7 @@ function start(route){
   console.log ("Start Function");
   
   function onRequest(request, response){
-    var pathname = url.parse (request.url) .pathname;      
-    //console.log ("Request for " + pathname + " received.");
+    var pathname = url.parse (request.url) .pathname;     
     
     route (pathname);
     
@@ -31,4 +33,8 @@ function start(route){
 
 console.log ("Start Server");
 
-exports.start = start ();
+//exports.start = start ();
+
+server.start(router.router);
+
+
