@@ -10,7 +10,7 @@ function route(pathname){
   console.log("About to route a request for" + pathname);
 };
 
-//exports.route = route ();
+exports.route = route ();
 
 function start(route){
   console.log ("Start Function");
